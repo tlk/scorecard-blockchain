@@ -8,7 +8,13 @@ export class Block {
   hashed: string;
   hash() {
     return CryptoJS
-      .SHA256("foobar"+this.previous_hash+","+this.points+","+this.nonce)
+      .SHA256(
+        "foobar"+
+        this.previous_hash.toUpperCase()+
+        ","+
+        this.points+
+        ","+
+        this.nonce)
       .toString()
       .toUpperCase()
       .substr(0, 4);
@@ -40,7 +46,24 @@ export class AppComponent {
     block.nonce = undefined;
     block.hashed = undefined;
   }
-  validate(): void {
-    // todo
+  getClass(chain: [Block], i: number) {
+    var block = chain[i];
+    if (!block.points || !block.nonce || !block.hashed) {
+      return "warning";
+    }
+    block.previous_hash = i == 0 
+      ? "0000" 
+      : chain[i-1].hashed;
+    return this.validate(block)
+      ? "success"
+      : "danger";
+  }
+  validate(block: Block): boolean {
+    return block.hash() === block
+      .hashed
+      .toUpperCase();
+  }
+  resetChain(): void {
+    this.chain = [new Block(), new Block(), new Block(), new Block(), new Block(), new Block(), new Block()]
   }
 }
