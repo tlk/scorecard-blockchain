@@ -1,13 +1,13 @@
 # Paper-based Scorecard "Blockchain"
 
-This is a small web application that was used to keep track of the points given to a team at any given post (station) during an outdoors game that was played by a group of 40 people. It is a toy project that lives and breathes only because of the blockchain hype, but maybe - just maybe, it will encourage more people to get to know the details of a real [blockchain](https://en.wikipedia.org/wiki/Blockchain).
+This is a small web application that was used to keep track of the points given to a team at any given post (station) during an outdoor game that was played by a group of 40 people. It is a toy project that lives and breathes only because of the blockchain hype, but maybe - just maybe, it will encourage more people to get to know the details of a real [blockchain](https://en.wikipedia.org/wiki/Blockchain).
 
 This was inspired by https://github.com/anders94/blockchain-demo which is great for understanding some of the mechanics behind a blockchain.
 
 See http://www.thomaslkjeldsen.com/scorecard-blockchain/ for a live demo (mobile friendly)
 
 
-### The outdoors game
+### The outdoor game
 The outdoor game was made up of the following:
 * six teams and
 * six posts (station)
