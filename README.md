@@ -35,12 +35,10 @@ At the end all scorecards were collected and sorted by the total points. The sco
 [![Simplicity](https://img.youtube.com/vi/K8Xq4Cr4HoI/0.jpg)](http://www.youtube.com/watch?v=K8Xq4Cr4HoI)
 
 
-### Is this really a blockchain?!
-The proof of work is a nonce that makes the computed hash start with the string "00". Since the proof of work requirements are so relaxed any smartphone is able to compute the "proof of work" as you type. Also, there is no record number and there is no timestamp recorded in a block, so it is very easy to falsify blocks.
-
-This is a toy project and it very much relies on team members being in a forest without access to computers :-)
-
 ### Wait, you said there was one blockchain per team?!
-Right. This is totally different from the normal concept of a blockchain. We could move this toy project closer to a real blockchain if we added the team number to the blocks and made the mining application able to communicate with the other miners (posts/stations). The only problem with this is that the posts would require network connectivity (there was no mobile signal coverage in the forest), the upside is that we would not need to store the blockchain on a piece of paper - but where is the fun in that!
+Right. This is totally different from the normal concept of a blockchain. This toy project could move closer to a real blockchain if we added the team number to the blocks and made the mining application able to communicate with the other miners (posts/stations). The only problem with this is that the posts would require network connectivity and there was no mobile signal coverage in the forest. The upside would be that we would not need to store the blockchain on a piece of paper - but where is the fun in that!
 
-As you can tell, the concept of a blockchain has *really* been stretched here :-)
+### Is this really a blockchain?!
+The proof of work is a nonce that makes the computed hash start with the string "00". This requirement is so relaxed that any smartphone is able to compute the "proof of work" as you type, so it is indeed a very weak "proof of work". Also, there is no record number and there is no timestamp recorded in a block. 
+
+As you can tell, the concept of a blockchain has *really* been stretched here. Feel free to enlighten me about any other flaws :-)
